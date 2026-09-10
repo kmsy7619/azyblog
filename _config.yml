@@ -84,4 +84,4 @@ deploy:
   type: git
   repository: https://github.com/kmsy7619/azyblog.git
   branch: gh-pages
-  message: deploy: 更新静态站点
+  message: 'deploy: 更新静态站点'

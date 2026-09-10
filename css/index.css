@@ -19806,12 +19806,24 @@ hr{border:0!important;border-top:1px solid var(--ed-line-soft)!important;margin:
    ============================================================ */
 
 #page-header{
-  background:rgba(13,13,16,.74)!important;
-  backdrop-filter:blur(16px) saturate(1.25);
-  -webkit-backdrop-filter:blur(16px) saturate(1.25);
-  border-bottom:1px solid var(--ed-line-soft)!important;
+  background:transparent!important;
+  border-bottom:none!important;
 }
 #page-header::after{display:none!important}
+
+/* 毛玻璃落在 #nav 自己身上。
+   注意：backdrop-filter 不能加在 #page-header 上 —— 它是 #nav 的祖先，
+   而 #nav 是 position:fixed。祖先有 backdrop-filter 会改变 fixed 子元素的
+   containing block，导致 #nav 跟着 #page-header 一起滚动、回到顶部时重新
+   进入视口，表现为「导航栏闪一下」。 */
+#nav{
+  background:rgba(13,13,16,.78)!important;
+  backdrop-filter:blur(16px) saturate(1.25)!important;
+  -webkit-backdrop-filter:blur(16px) saturate(1.25)!important;
+  outline:0!important;
+  border-bottom:1px solid var(--ed-line-soft)!important;
+  box-shadow:none!important;
+}
 
 #site-name,#blog_name{
   font-family:var(--ed-serif)!important;

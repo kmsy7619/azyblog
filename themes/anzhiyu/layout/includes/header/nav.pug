@@ -15,7 +15,7 @@ nav#nav
                       img.back-menu-item-icon(src=item.icon alt=item.name)
                       span.back-menu-item-text= item.name
       a#site-name(href=url_for('/') accesskey="h")
-        .title #[=config.title]
+        .title = '主页'
         i.anzhiyufont.anzhiyu-icon-house-chimney
       if (theme.nav.clock)
         !=partial('includes/anzhiyu/clock', {}, {cache: true})

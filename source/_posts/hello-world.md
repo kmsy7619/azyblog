@@ -1,38 +1,51 @@
 ---
-title: Hello World
+title: 开篇
+date: 2026-09-09 04:20:00
+categories:
+  - 杂谈
+tags:
+  - 随笔
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+## 先把这件事说在前面
 
-### Create a new post
+这个站是给自己搭的一个角落。
 
-``` bash
-$ hexo new "My New Post"
-```
+之前笔记散在到处 —— 微信收藏、系统备忘录、某个再也不会打开的在线文档。时间久了，能翻回来的越来越少。于是干脆收拢到一处。
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+这不是一个教程站，也不打算日更。
 
-### Run server
+## 这里会有什么
 
-``` bash
-$ hexo server
-```
+**技术记录。** 主要是踩过的坑，以及踩完之后才想明白的那部分。写"我当初为什么这么想，结果为什么不对"，比写"你应该怎么做"有用得多 —— 至少对我自己是有用的。
 
-More info: [Server](https://hexo.io/docs/server.html)
+**随笔。** 没有明确主题的那些想法。有些可能写出来就后悔，但后悔也比忘掉好。
 
-### Generate static files
+**其他。** 看情况。
 
-``` bash
-$ hexo generate
-```
+## 这个站是怎么搭起来的
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+- **框架**：[Hexo](https://hexo.io) 8.x
+- **主题**：[anzhiyu](https://github.com/anzhiyu-c/hexo-theme-anzhiyu) 1.7.1，在上面覆写了一套暗色样式
+- **环境**：一台 ARM 的盒子（Armbian / Debian Bookworm），跑在家里内网里
+- **架构**：纯静态文件，没有数据库，没有后台
 
-### Deploy to remote sites
+技术选型上没什么讲究 —— 够用、能改、不用维护一堆服务。博客这种东西，最重要的从来不是框架。
 
-``` bash
-$ hexo deploy
-```
+## 关于这个配色
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+墨黑底，黄铜点缀。
+
+不是什么特别的设计主张。暗色看久了眼睛舒服一些；黄铜色比默认那种亮蓝色不那么"程序员"，晚上看也不刺眼。字体用的是衬线体 —— 标题像印出来的，正文保持克制。
+
+如果哪天你觉得难看，改 `_config.anzhiyu.yml` 里的 `theme_color` 就行。
+
+## 一些约定
+
+- 写得慢没关系，但尽量不写水文
+- 文章会不定期修订，修订过的在文末标注
+- 不追求流量，也不做推广位
+
+至于怎么联系我 —— 去[关于](/about/)那页看看。
+
+`hello-world` 那篇默认文章被我删了。这是第一篇。

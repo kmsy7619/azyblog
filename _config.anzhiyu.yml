@@ -612,17 +612,17 @@ site_verification:
 
 theme_color:
   enable: true
-  main: "#425AEF"
-  dark_main: "#f2b94b"
-  paginator: "#425AEF"
+  main: "#C2A15A"
+  dark_main: "#E2C88C"
+  paginator: "#C2A15A"
   #   button_hover: "#FF7242"
-  text_selection: "#2128bd"
+  text_selection: "#C2A15A59"
   link_color: "var(--anzhiyu-fontcolor)"
   meta_color: "var(--anzhiyu-fontcolor)"
   hr_color: "#4259ef23"
   code_foreground: "#fff"
   code_background: "var(--anzhiyu-code-stress)"
-  toc_color: "#425AEF"
+  toc_color: "#C2A15A"
   #   blockquote_padding_color: "#425AEF"
   #   blockquote_background_color: "#425AEF"
   scrollbar_color: "var(--anzhiyu-scrollbar)"
@@ -728,7 +728,7 @@ ClickShowText:
 
 # Default display mode (网站默认的显示模式)
 # light (default) / dark
-display_mode: light
+display_mode: dark
 
 # Beautify (美化页面显示)
 beautify:
@@ -740,16 +740,16 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: 16px
+  global-font-size: 16.5px
   code-font-size:
-  font-family:
+  font-family: 'Inter, -apple-system, BlinkMacSystemFont, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Arial, sans-serif'
   code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
 # 左上角网站名字 主页居中网站名字
 blog_title_font:
   font_link:
-  font-family: PingFang SC, 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font-family: 'Iowan Old Style, Palatino Linotype, Palatino, Songti SC, Noto Serif SC, Georgia, serif'
 
 # The setting of divider icon (水平分隔线图标设置)
 hr_icon:
@@ -759,7 +759,7 @@ hr_icon:
 
 # the subtitle on homepage (主页subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Effect Speed Options (打字效果速度参数)
